@@ -1,0 +1,35 @@
+<?php
+function array_random($arr, $num = 1) {
+  shuffle($arr);
+  
+  $r = array();
+  for ($i = 0; $i < $num; $i++) {
+    $r[] = $arr[$i];
+  }
+  return $num == 1 ? $r[0] : $r;
+ }
+ 
+ $a = array(
+ 
+ "\It's Gio's fault. We all know it's Gio's fault. You know it, I know it, Gio knows it. Why are you even asking me if we all know that Gio did it?\"
+ "\...Gio. We talked about this. You gotta stop.\"
+ "\It's Gio's fault. Point, laugh, then move on with your lives. And let me move on with mine. Please.\"
+ "\How about we don't blame Gio for once. No? Not an option? Okay, well. I tried. Do better, Gio.\"
+ "\Gio did it.\"
+ "\Feather did it.\"
+ "\Owen did it, but we know he won't own up to his fucking mistakes, so.\"
+ "\GIO ISN'T YOUR SCAPEGOAT.\"
+ "\LEAVE GIO ALONE\"
+ "\Gio fucked up again, didn't he.\"
+ "\I'll take the blame for this one. Because it's funny. No one would suspect the ChatBot of messing up, so this one's on me. My bad, fam.\"
+ "\It's not my fault. Look at me, $(user). How can you challenge a perfect, immortal machine?\"
+ "\Blame Gio!\"
+ "\#FreeGio\"
+ "\Maybe you should look deep inside and realize who is ACTUALLY responsible, before you go laying blame on everyone else.\"
+ "\You did it! It was you! I saw it happen!\"
+ "\It was Professor Plum. In the dining room. With a wrench, probably.\"
+ "\Gio did it, probably.\"
+ 
+ );
+ print_r(array_random($a));
+ ?>
